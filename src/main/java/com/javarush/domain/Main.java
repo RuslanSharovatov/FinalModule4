@@ -138,7 +138,7 @@ public class Main {
             Set<Language> languages = countryLanguages.stream().map(cl -> {
                 Language language = new Language();
                 language.setLanguage(cl.getLanguage());
-                language.setOfficial(cl.getOfficial());
+                language.setIsOfficial(cl.getIsOfficial());
                 language.setPercentage(cl.getPercentage());
                 return language;
             }).collect(Collectors.toSet());
